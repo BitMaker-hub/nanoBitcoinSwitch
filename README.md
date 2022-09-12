@@ -1,9 +1,7 @@
 
-<img style="max-width:100%;" src="https://user-images.githubusercontent.com/33088785/166832680-600ed270-cbc9-4749-82f1-c1853b242329.png">
+<img style="max-width:100%;" src="https://github.com/BitMaker-hub/nanoBitcoinSwitch/blob/master/Recursos/nanoBitcoinSwitch.jpg">
 
-<img style="max-width:100%;" src="https://user-images.githubusercontent.com/33088785/166829474-a28ca2b7-dd3e-46d4-89d3-8a10bf1d3fad.png">
-
-## Compatible with any ESP32 microcontroller, with or without a screen, supporting native LN invoices and static LNURLPay links.
+## Compatible with any ESP32 microcontroller, supporting native LN invoices and static LNURLPay links.
 - Minimal code to get balance from LNBits wallet.
 - Check how to configure
 
@@ -23,6 +21,4 @@
 - Upload to device
 
 > Default password is "ToTheMoon"
-
-
-![trigger](https://user-images.githubusercontent.com/33088785/166829947-d0194b32-19fc-4a16-83d3-dc6f9af9337c.gif)
+> More info about original code on https://github.com/arcbtc/bitcoinSwitch
