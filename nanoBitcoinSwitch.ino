@@ -1,16 +1,12 @@
 #include <WiFi.h>
-#include <WebServer.h>
 #include <WiFiClientSecure.h>
 #include "configs.h"
 #include <ArduinoJson.h>
-
-using WebServerClass = WebServer;
 
 int balance;
 int oldBalance;
 bool down = false;
 
-WebServerClass server;
 
 void setup()
 {
@@ -18,6 +14,7 @@ void setup()
   delay(1000);
 
   pinMode (switchPin, OUTPUT);
+  digitalWrite(switchPin, HIGH);
 
   Serial.println("BitcoinSwitch started......");
   Serial.print("   > Connecting to ssid: "); Serial.println(WIFI_SSID);
@@ -47,9 +44,9 @@ void loop() {
     }
     oldBalance = balance;
     Serial.println("Paid");
-    digitalWrite(switchPin, HIGH);
+    digitalWrite(switchPin, LOW);
     delay(timePin);
-    digitalWrite(switchPin, LOW); 
+    digitalWrite(switchPin, HIGH);
     delay(2000);
   }
 }
