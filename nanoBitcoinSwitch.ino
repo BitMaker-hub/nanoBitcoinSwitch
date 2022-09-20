@@ -44,9 +44,9 @@ void loop() {
     }
     oldBalance = balance;
     Serial.println("Paid");
-    digitalWrite(switchPin, LOW);
-    delay(timePin);
     digitalWrite(switchPin, HIGH);
+    delay(timePin);
+    digitalWrite(switchPin, LOW);
     delay(2000);
   }
 }
